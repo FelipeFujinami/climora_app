@@ -14,12 +14,6 @@ load_dotenv()
 # Puxa a URL com segurança
 uri = os.getenv("MONGO_URI")
 client = MongoClient(uri)
-
-db = client.climora_db
-users_collection = db.users
-
-# conexão com banco de dados
-client = MongoClient("mongodb+srv://adminf_climora:<db_password>@climora.iota2fu.mongodb.net/?appName=climora")
 db = client.climora_db
 users_collection = db.users
 
